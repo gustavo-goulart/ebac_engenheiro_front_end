@@ -2,9 +2,11 @@ const form = document.getElementById("agenda-contatos");
 const nome = [];
 const telefone = [];
 
-let linhas = "";
+let linhas = ""; //adicionado ao conteúdo global para evitar o reset de linha
 
 form.addEventListener("submit", function (e) {
+  e.preventDefault(); //remover comportamento de atualizar a página
+  //chamar os campos nome e nota
   adicionaLinha();
   atualizaTabela();
 });
@@ -19,6 +21,7 @@ function adicionaLinha() {
     nome.push(inputNomeContato.value);
     telefone.push(inputTelefoneContato.value);
 
+    //adicionar no corpo da tabela
     let linha = "<tr>";
     linha += `<td>${inputNomeContato.value}</td>`;
     linha += `<td>${inputTelefoneContato.value}</td>`;
@@ -27,6 +30,7 @@ function adicionaLinha() {
     linhas += linha;
   }
 
+  //limpar o campo após adicionar conteúdo
   inputNomeContato.value = "";
   inputTelefoneContato.value = "";
 }
