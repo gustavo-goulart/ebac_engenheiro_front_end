@@ -9,8 +9,8 @@ $(document).ready(function () {
 
   $("form").on("submit", function (e) {
     e.preventDefault();
-    const enderecoDaNovaImagem = $("endereco-imagem-nova").val();
-    const novoItem = $("<li></li>");
+    const enderecoDaNovaImagem = $("#endereco-imagem-nova").val();
+    const novoItem = $("<li style=display:none></li>");
     $(`<img src="${enderecoDaNovaImagem}" />`).appendTo(novoItem); //criação de um elemento no jQuery, appendTo pega o elemento e joga no Li
     $(`
       <div class="overlay-imagem-link">
@@ -20,5 +20,7 @@ $(document).ready(function () {
       </div>
     `).appendTo(novoItem);
     $(novoItem).appendTo("ul");
+    $(novoItem).fadeIn(1000); //efeito retardo ao incluir a foto
+    $("#endereco-imagem-nova").val("");
   });
 });
