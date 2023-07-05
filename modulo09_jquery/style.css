@@ -49,3 +49,41 @@ button {
 #btn-cancelar {
   background-color: red;
 }
+
+ul {
+  display: flex; /* Elementos fiquem um ao lado do outro */
+  flex-wrap: wrap; /*quando ocupar todo o tamanho da tela quebra nova linha*/
+}
+
+ul li {
+  /*limitar o tamanho dos li*/
+  max-width: 33%;
+  list-style: none; /*retirar o pontinho da lista*/
+  position: relative;
+  max-height: 280px;
+  overflow-y: hidden; /*"corta" a imagem para igualar*/
+}
+
+ul li img {
+  max-width: 100%; /*tamanho das imagens dento do li*/
+}
+
+.overlay-imagem-link {
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute; /*colocar no canto esquerdo do li*/
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0; /*ocultar barra de link mostra foto*/
+  transition: all ease 0.5s;
+}
+
+.overlay-imagem-link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul li:hover .overlay-imagem-link {
+  opacity: 1; /*MOSTRA A BARRINHA NA FOTO*/
+}
