@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
 }
 
 body {
@@ -17,17 +20,17 @@ body {
 }
 
 header h1 {
-  font-size: 38px;
+  font-size: 50px;
   font-weight: bold;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.8);
-  width: 482px;
-  padding: 16px;
+  width: 500px;
   border-radius: 5px;
   margin: 5px;
 }
 
 form input {
+  width: 340px;
   font-size: 24px;
   background-color: #fff;
   border: none;
@@ -37,6 +40,7 @@ form input {
 }
 
 form button {
+  width: 150px;
   background-color: #009432;
   color: #fff;
   font-size: 24px;
