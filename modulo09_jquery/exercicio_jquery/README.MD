@@ -1,14 +1,11 @@
-#Lista de Tarefas
+# Lista de Tarefas
 
-•Crie uma aplicação de lista de tarefas. Nesta aplicação deve
-haver um formulário com um campo para adicionar o nome da
-tarefa e um botão para cadastrar a tarefa;
+Projeto desenvolvido com HTML, CSS e jQuery.
 
-•Ao submeter o formulário adicione um elemento <li> dentro de
-uma lista ordenada ou não;
+![](https://user-images.githubusercontent.com/80080887/229156098-90bec466-6228-4107-9f23-2f1fa2dfd930.png)
 
-•Ao clicar nos itens da lista adicione um efeito que aplique uma
-linha em cima do texto (text decoration : line through)
+## Linguagens utilizadas(Bibliotecas/Plugins) :books:
 
-•Utilize o jQuery para manipular os elementos e controlar os
-eventos;
+- HTML
+- CSS
+- jQuery
