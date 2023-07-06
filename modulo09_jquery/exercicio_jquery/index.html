@@ -7,13 +7,22 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <header>
-      <h1>Lista de Tarefas</h1>
+    <div class="container">
+      <header>
+        <h1>Lista de Tarefas</h1>
+      </header>
       <form>
-        <input type="text" id="tarefa" required placeholder="Digite a Tarefa" />
+        <input
+          type="text"
+          id="inputText"
+          required
+          placeholder="Digite a Tarefa"
+        />
         <button type="submit">Salvar Tarefa</button>
       </form>
       <ul id="lista"></ul>
-    </header>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="src/main1.js"></script>
   </body>
 </html>

@@ -19,24 +19,38 @@ body {
   overflow: hidden;
 }
 
-header h1 {
+.container {
+  text-align: center;
+  height: 450px;
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
   font-size: 50px;
   font-weight: bold;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 500px;
-  border-radius: 5px;
   margin: 5px;
 }
 
-form input {
-  width: 340px;
+.done {
+  text-decoration: line-through;
+}
+
+#inputText {
+  width: 320px;
   font-size: 24px;
   background-color: #fff;
-  border: none;
+  border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  padding: 8px;
+  padding: 5px;
   margin: 5px;
+}
+
+#tarefa::placeholder {
+  color: black;
 }
 
 form button {
@@ -48,5 +62,22 @@ form button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  padding: 8px;
+  padding: 5px;
+}
+
+li {
+  width: 80%;
+  cursor: pointer;
+  display: none;
+  font-size: 22px;
+  margin-left: 18px;
+}
+
+p {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  text-transform: capitalize;
 }
