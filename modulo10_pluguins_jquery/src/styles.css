@@ -9,12 +9,21 @@ html {
 }
 
 header {
+  position: sticky; /*rolagem do cabeçalho junto com o scroll*/
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+header,
+footer {
   background-color: #192a56;
   padding-top: 16px;
   color: #fff;
 }
 
-header > .container {
+header > .container,
+footer > .container {
   /*estilizar filhos diretos da tag*/
   justify-content: space-between;
   align-items: center;
@@ -64,7 +73,7 @@ nav li a {
 }
 
 section {
-  padding: 48px 0;
+  padding: 40px 0;
 }
 
 section h2 {
@@ -93,10 +102,10 @@ section h2 {
   margin: 0 5%;
 }
 
-.lista-veiculos li button {
+button {
   display: block;
   width: 100%;
-  padding: 3px 0;
+  padding: 8px 0;
   border: none;
   background-color: #192a56;
   color: #fff;
@@ -115,4 +124,42 @@ section h2 {
 .price del {
   color: #ccc;
   font-size: 14px;
+}
+
+form {
+  max-width: 360px;
+}
+
+.form-campo {
+  margin-bottom: 5px;
+}
+
+.form-campo label {
+  font-weight: bold;
+  display: block;
+}
+
+.form-campo input,
+.form-campo textarea {
+  width: 100%;
+  display: block;
+  padding: 8px;
+}
+
+.form-campo textarea {
+  resize: none;
+  height: 120px;
+}
+
+form button {
+  max-width: 120px;
+}
+
+footer li {
+  list-style: none;
+  margin-left: 16px;
+}
+
+footer li img {
+  height: 32px;
 }
