@@ -4,7 +4,7 @@ $(document).ready(function () {
   });
 
   $(".menu-hamburguer").click(function () {
-    $("nav").slideToggle(); <!--Abre e fecha o MENU NAV-->
+    $("nav").slideToggle(); //Abre e fecha o MENU NAV
   });
 
   $("#telefone").mask("(00)00000-0000", {
@@ -47,15 +47,17 @@ $(document).ready(function () {
     },
   });
 
-  $('.lista-veiculos button').click(function(){
-    const destino = $('#contato');
+  $(".lista-veiculos button").click(function () {
+    const destino = $("#contato");
     const nomeVeiculo = $(this).parent().find("h3").text();
 
-    $('#veiculo-interesse').val(nomeVeiculo);
+    $("#veiculo-interesse").val(nomeVeiculo);
 
-
-    $('html').animate({
-      scrollTop: destino.offset().top
-    }, 1000)
-  })
+    $("html").animate(
+      {
+        scrollTop: destino.offset().top,
+      },
+      1000
+    );
+  });
 });
