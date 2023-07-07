@@ -211,23 +211,27 @@
         <form>
           <div class="form-campo">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" />
+            <input type="text" id="nome" name="nome" />
           </div>
           <div class="form-campo">
             <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" />
+            <input type="tel" id="telefone" name="telefone" />
           </div>
           <div class="form-campo">
             <label for="email">Email:</label>
-            <input type="email" id="email" />
+            <input type="email" id="email" name="email" />
           </div>
           <div class="form-campo">
             <label for="veiculo-interesse">Veículo de interesse:</label>
-            <input type="text" id="veiculo-interesse" />
+            <input
+              type="text"
+              id="veiculo-interesse"
+              name="veiculoDeInteresse"
+            />
           </div>
           <div class="form-campo">
             <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem"></textarea>
+            <textarea id="mensagem" name="mensagem"></textarea>
           </div>
           <button type="submit">Enviar</button>
         </form>
@@ -267,6 +271,9 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script src="src/js/jquery.mask.min.js"></script>
+    <script src="src/js/jquery.validate.min.js"></script>
+    <script src="src/js/messages_pt_BR.min.js"></script>
     <script>
       $(document).ready(function () {
         $("#carousel-imagens").slick({
@@ -275,6 +282,46 @@
 
         $(".menu-hamburguer").click(function () {
           $("nav").slideToggle(); <!--Abre e fecha o MENU NAV-->
+        });
+
+        $("#telefone").mask("(00)00000-0000", {
+          placeholder: "(xx)xxxxx-xxxx",
+        });
+
+        $("form").validate({
+          rules: {
+            nome: {
+              required: true,
+            },
+            telefone: {
+              required: true,
+            },
+            email: {
+              required: true,
+              email: true,
+            },
+            mensagem: {
+              required: true,
+            },
+            veiculoDeInteresse: {
+              required: false,
+            },
+          },
+
+          messages: {
+            nome: "Por favor insira o seu nome",
+          },
+
+          submitHandler: function (form) {
+            console.log(form);
+          },
+
+          invalidHandler: function (evento, validador) {
+            let camposIncorretos = validador.numberOfInvalids();
+            if (camposIncorretos) {
+              alert(`Existem ${camposIncorretos} campos incorretos`);
+            }
+          },
         });
       });
     </script>
