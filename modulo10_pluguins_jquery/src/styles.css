@@ -1,0 +1,50 @@
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #192a56;
+  padding-top: 16px;
+  color: #fff;
+}
+
+header > .container {
+  /*estilizar filhos diretos da tag*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+nav {
+  background-color: #575fcf;
+  padding: 16px 0;
+}
+
+nav li {
+  list-style: none;
+  display: inline; /*itens ao lado do outro*/
+  margin-right: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none; /*retira sublinhado do menu*/
+}
+
+.menu-hamburguer {
+  width: 32px;
+}
+
+.menu-hamburguer span {
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  display: block; /*padrão span inline*/
+  margin-bottom: 4px;
+}
