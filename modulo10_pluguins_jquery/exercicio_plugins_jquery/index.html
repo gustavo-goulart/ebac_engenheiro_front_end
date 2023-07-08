@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="src/reset.css" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Faça seu cadastro</h1>
+    </header>
+    <main>
+      <div class="container">
+        <form>
+          <div class="form-campo">
+            <label for="nome">Nome:</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Nome completo"
+            />
+          </div>
+          <div class="form-campo">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" />
+          </div>
+          <div class="form-campo">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div class="form-campo">
+            <label for="cpf">CPF:</label>
+            <input type="number" id="cpf" name="cpf" />
+          </div>
+          <div class="form-campo">
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" />
+          </div>
+          <div class="form-campo">
+            <label for="cep">CEP:</label>
+            <input type="number" id="cep" name="cep" />
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
