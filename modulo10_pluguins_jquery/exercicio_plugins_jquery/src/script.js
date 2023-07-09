@@ -1,18 +1,6 @@
 $(document).ready(function () {
-  $("#nome").mask("Nome completo", {
-    placeholder: "Nome completo",
-  });
-
   $("#telefone").mask("(00)00000-0000", {
     placeholder: "(xx)xxxxx-xxxx",
-  });
-
-  $("#email").mask("exemple@example.com", {
-    placeholder: "exemple@example.com",
-  });
-
-  $("#endereco").mask("Endereço Completo", {
-    placeholder: "Endereço Completo",
   });
 
   $("#cpf").mask("000.000.000-00", {
