@@ -1,1 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  padding: 16px 0 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu > li {
+  float: left; /*traz um elemento ao lado do outro*/
+  list-style: none;
+  padding: 16px;
+  border-top: 4px solid transparent;
+  position: relative;
+}
+
+.menu li:hover {
+  border-color: red;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.clear {
+  clear: both; /*limpar o efeito float left*/
+}
+
+.submenu {
+  display: none;
+  border: 1px solid red;
+  position: absolute;
+  left: 0;
+  width: 300px;
+  top: 100%;
+}
+
+.submenu li {
+  display: block;
+  padding: 8px;
+}
