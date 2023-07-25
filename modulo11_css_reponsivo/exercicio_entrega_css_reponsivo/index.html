@@ -3,84 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="IDKShop-Games" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="src/css/reset.css" />
     <link rel="stylesheet" href="src/css/style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="src/css/responsive.css" />
+    <title>IDKShop-Games</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <img src="images/logo_loja.png" alt="logo_loja" />
+    <main class="container">
+      <header class="header">
+        <a href="#" class="logo">
+          <img src="images/logo_loja.png" alt="logo_loja_IDKShop" />
+        </a>
+
         <nav>
           <ul class="menu">
-            <li>Sobre</li>
-            <li>Produtos</li>
+            <li>
+              <a href="#">Sobre</a>
+            </li>
+            <li>
+              <a href="#">Produtos</a>
+            </li>
           </ul>
         </nav>
-      </div>
-    </header>
-    <main>
-      <div class="container container">
-        <section id="sobre_a_loja">
-          <img src="images/foto_loja.jpg" alt="Foto da fachada da Loja" />
-          <div>
-            <h2 id="sobre">Sobre a Loja</h2>
-            <p id="texto_sobre">
-              A IDK Shop, fundada em 2009, é a soma de um amor incondicional
-              pelos games com o fascínio do ecommerce. Atende todo o Brasil, via
-              correios e transportadoras, além de ser loja oficial da
-              PlayStation, Xbox,Nintendo e muitas outras!
-            </p>
-          </div>
-        </section>
-        <section>
-          <div class="container" id="produtos">
-            <h2 id="texto-produtos">Produtos</h2>
-            <ul class="container-flex lista-produtos">
-              <li class="item-central">
-                <img src="images/jogo_godofwar.jpg" alt="jogo_godofwar" />
-                <h3>Jogo God of War: Ragnarok - PS4</h3>
-                <p>
-                  Em God of War: Ragnarok, acompanhe a jornada de Kratos e
-                  Atreus pelos Nove Reino em busca de respostas.
-                </p>
-                <button type="button">Adicionar ao carrinho</button>
-              </li>
-              <li class="item-central">
-                <img
-                  src="images/jogo_doom_ethernal.jpg"
-                  alt="jogo_doom_ethernal"
-                />
-                <h3>Jogo Doom Eternal - PS4</h3>
-                <p>
-                  Em Doom Eternal, as portas do inferno reabrem novamente,
-                  continuando a história do jogo de 2016, que fez sucesso.
-                </p>
-                <button type="button">Adicionar ao carrinho</button>
-              </li>
-              <li class="item-central">
-                <img src="images/jogo_the_querry.jpg" alt="jogo_the_querry" />
-                <h3>Jogo The Quarry - Xbox One</h3>
-                <p>
-                  The Quarry conta a história de um grupo de jovens tentando
-                  sobreviver a uma noite de terror.É o fim do verão nas remotas.
-                </p>
-                <button type="button">Adicionar ao carrinho</button>
-              </li>
-              <li class="item-central">
-                <img src="images/jogo_dragon_ball.jpg" alt="jogo_dragon_ball" />
-                <h3>Jogo Dragon Ball - Xbox One</h3>
-                <p>
-                  Dragon Ball: The Breakers é um jogo online de ação e luta em
-                  que uma equipe de 7 personagens únicos tentam sobreviver.
-                </p>
-                <button type="button">Adicionar ao carrinho</button>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </div>
+      </header>
+
+      <section class="sobre">
+        <img class="image" src="images/foto_loja_pequena.jpg" alt="foto_loja" />
+        <div class="conteudo-sobre">
+          <h2>Sobre a loja</h2>
+          <p>
+            A IDK Shop, fundada em 2009, é a soma de um amor incondicional pelos
+            games com o fascínio do ecommerce. Atende todo o Brasil, via
+            correios e transportadoras, além de ser loja oficial da PlayStation,
+            Xbox,Nintendo e muitas outras!
+          </p>
+        </div>
+      </section>
+
+      <section class="produtos">
+        <h2 class="titulo-produtos">Produtos</h2>
+        <div class="lista-produtos">
+          <ul class="produto">
+            <li>
+              <img
+                src="images/jogo_doom_ethernal.jpg"
+                alt="jogo_doom_ethernal"
+              />
+
+              <h3>Jogo Doom Eternal - PS4</h3>
+              <p>
+                Em Doom Eternal, as portas do inferno reabrem novamente,
+                continuando a história do jogo de 2016, que fez sucesso.
+              </p>
+
+              <button class="button" type="submit">
+                Adicionar ao carrinho
+              </button>
+            </li>
+            <li>
+              <img src="images/jogo_godofwar.jpg" alt="jogo_godofwar" />
+              <h3>Jogo God of War - PS4</h3>
+              <p>
+                Em God of War: Ragnarok, acompanhe a jornada de Kratos e Atreus
+                pelos Nove Reino em busca de respostas.
+              </p>
+              <button class="button" type="submit">
+                Adicionar ao carrinho
+              </button>
+            </li>
+            <li>
+              <img src="images/jogo_dragon_ball.jpg" alt="jogo_dragon_ball" />
+              <h3>Jogo Dragon Ball - Xbox One</h3>
+              <p>
+                Dragon Ball: The Breakers é um jogo online de ação e luta em que
+                uma equipe de 7 personagens únicos tentam sobreviver.
+              </p>
+              <button class="button" type="submit">
+                Adicionar ao carrinho
+              </button>
+            </li>
+            <li>
+              <img src="images/jogo_the_querry.jpg" alt="jogo_the_querry" />
+              <h3>Jogo The Quarry - Xbox One</h3>
+              <p>
+                The Quarry conta a história de um grupo de jovens tentando
+                sobreviver a uma noite de terror.É o fim do verão nas remotas
+              </p>
+              <button class="button" type="submit">
+                Adicionar ao carrinho
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
   </body>
 </html>

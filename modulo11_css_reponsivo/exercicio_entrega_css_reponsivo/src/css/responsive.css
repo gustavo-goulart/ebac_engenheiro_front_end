@@ -1,0 +1,54 @@
+@media screen and (max-width: 718px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .header {
+    display: block;
+    margin: auto;
+  }
+
+  .image {
+    width: 40%;
+  }
+
+  .conteudo-sobre {
+    font-size: 0.8em;
+  }
+
+  .titulo-produtos {
+    text-align: center;
+  }
+
+  .produto {
+    display: block;
+    width: 40%;
+    margin: auto;
+    font-size: 1.2em;
+    padding: 15px;
+  }
+
+  .produto img {
+    padding: 15px;
+  }
+
+  .produto h3 {
+    text-align: center;
+  }
+
+  .produto p {
+    text-align: justify;
+    padding: 10px;
+  }
+
+  .button {
+    font-size: 1em;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s ease-in-out;
+  }
+
+  .button:hover {
+    background-color: green;
+  }
+}

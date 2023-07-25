@@ -2,94 +2,91 @@
 
 body {
   background: #ccc;
+  font-family: "Oxanium", cursive;
 }
 
 .container {
   max-width: 1024px;
-  width: 100%;
   margin: 0 auto;
+  width: 100%;
 }
-
-header .container {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: black;
 }
 
-header {
-  padding: 16px 0 0;
-  background: black;
-  margin-bottom: 56px;
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.menu > li {
-  float: left; /*traz um elemento ao lado do outro*/
-  list-style: none;
-  padding: 16px;
-  border-top: 4px solid transparent;
-  position: relative;
-}
-
-.container-flex {
+.menu {
   display: flex;
+  margin: 20px;
 }
 
-#sobre {
-  margin: 8px;
+.logo {
+  margin: 20px;
 }
 
-#texto_sobre {
-  margin: 8px;
-  padding: 32px 0;
-}
-
-#sobre-a-loja img {
-  width: 331px;
-  height: 244px;
-  margin-right: 24px;
-}
-
-section {
-  padding: 40px 0;
-}
-
-section h2 {
-  margin-bottom: 16px;
-  border-bottom: 4px solid #8921ac;
-}
-
-.lista-produtos li {
-  list-style: none;
-  max-width: 24.5%;
-  margin-bottom: 24px;
-}
-
-.lista-produtos li img {
-  max-width: 100%;
-}
-
-.lista-produtos li h3 {
-  margin: 8px 0;
-}
-
-.item-central {
-  margin: 0.5%;
-}
-
-button {
-  display: block;
-  width: 100%;
-  padding: 8px 0;
-  border: none;
-  background-color: #8921ac;
+.menu li a {
   color: #fff;
-  font-size: 16px;
-  font-weight: bold;
-  font-style: italic;
-  border-radius: 5px;
+  margin-left: 30px;
+  font-size: 25px;
+  transition: 0.3s ease-in-out;
+}
+
+.menu li a:hover {
+  background-color: #8921ac;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.sobre {
+  display: flex;
+  margin-top: 50px;
+}
+
+.conteudo-sobre {
+  display: block;
+  margin: 0 10px;
+}
+
+.conteudo-sobre h2 {
+  border-bottom: 3px solid #8921ac;
+}
+
+.conteudo-sobre p {
+  padding: 20px 10px;
+}
+
+.titulo-produtos {
+  margin-top: 50px;
+  border-bottom: 3px solid #8921ac;
+}
+
+.produto {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.produto img {
+  width: 100%;
+}
+
+.produto h3 {
+  margin: 5px;
+}
+
+.produto p {
+  margin: 5px;
+}
+
+.button {
+  background-color: #8921ac;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 10px;
   cursor: pointer;
-  margin-top: 10px;
+  font-family: "Oxanium", cursive;
 }
