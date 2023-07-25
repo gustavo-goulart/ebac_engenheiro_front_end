@@ -2,5 +2,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Oxanium", cursive;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
