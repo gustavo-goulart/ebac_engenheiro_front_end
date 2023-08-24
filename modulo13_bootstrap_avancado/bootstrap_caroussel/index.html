@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bootstrap - Carousel</title>
+  </head>
+  <body>
+    <h1>Bootstrap - Carousel</h1>
+
+    <div class="container">
+      <div
+        id="carousel-exemplo"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div data-bs-interval="3000" class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="https://cdn.pixabay.com/photo/2023/07/19/19/14/monarch-butterfly-8137642_1280.png"
+            />
+            <div class="carousel-caption">
+              <h2>Foto de uma borboleta</h2>
+            </div>
+          </div>
+          <div data-bs-interval="3000" class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="https://cdn.pixabay.com/photo/2023/08/16/05/52/horse-8193368_1280.jpg"
+            />
+            <div class="carousel-caption">
+              <h2>Foto de um cavalo</h2>
+            </div>
+          </div>
+          <div data-bs-interval="3000" class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="https://cdn.pixabay.com/photo/2023/07/04/10/30/dragonfly-8105988_1280.jpg"
+            />
+            <div class="carousel-caption">
+              <h2>Foto de uma libélula</h2>
+            </div>
+          </div>
+        </div>
+        <button
+          data-bs-target="#carousel-exemplo"
+          data-bs-slide="prev"
+          class="carousel-control-prev"
+          type="button"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          data-bs-target="#carousel-exemplo"
+          data-bs-slide="next"
+          class="carousel-control-next"
+          type="button"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            class="active"
+            data-bs-target="#carousel-exemplo"
+            data-bs-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-exemplo"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-exemplo"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
