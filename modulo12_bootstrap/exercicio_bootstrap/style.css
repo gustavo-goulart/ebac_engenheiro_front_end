@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(53, 53, 242, 0.885);
+  color: #fff;
+}
+
+.container {
+  max-width: 500px;
+}
+
+h2 {
+  padding: 16px;
+  text-align: center;
+}
+
+form {
+  padding: 24px;
+}
