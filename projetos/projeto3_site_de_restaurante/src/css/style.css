@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap");
 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
 body {
   font-family: Roboto, sans-serif;
+  font-size: 13px;
 }
 .navbar {
   background-color: #e15f41;
@@ -18,6 +21,18 @@ body {
   color: #fff;
 }
 
-.navbar-brand {
+.navbar-toggler {
+  background-color: #ffeae6;
+}
+
+.section-title {
   font-family: Pacifico, cursive;
+}
+
+.section-title span {
+  color: #e15f41;
+}
+
+#sobre-o-restaurante {
+  background-color: #ffeae6;
 }
