@@ -9,6 +9,138 @@
     <title>Exercício Bootstrap</title>
   </head>
   <body>
+    <header id="cabecalho">
+      <div class="navbar navbar-expand-lg">
+        <div class="container">
+          <img src="img/logo.png" alt="logo IDK Shop" />
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <nav class="collapse navbar-collapse justify-content-end" id="menu">
+            <ul class="nav nav-pills navbar-nav">
+              <li class="nav-item">
+                <a href="#inicio" class="nav-link active">Início</a>
+              </li>
+              <li class="nav-item">
+                <a href="#produtos" class="nav-link">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a href="#promocoes" class="nav-link">Promoções</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contato" class="nav-link">Contato</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-carousel">
+        <div
+          id="carousel-produtos"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+              <img class="d-block w-100" src="img/almofada_bob_esponja.png" />
+              <div class="carousel-caption">
+                <h2>Almofada Bob Esponja</h2>
+              </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+              <img class="d-block w-100" src="img/caneca_mario.png" />
+              <div class="carousel-caption">
+                <h2>Caneca Super Mário</h2>
+              </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+              <img class="d-block w-100" src="img/camiseta_dragon_ball.png" />
+              <div class="carousel-caption">
+                <h2>Camiseta Dragon Ball</h2>
+              </div>
+            </div>
+          </div>
+          <button
+            data-bs-target="#carousel-produtos"
+            data-bs-slide="prev"
+            class="carousel-control-prev"
+            type="button"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            data-bs-target="#carousel-produtos"
+            data-bs-slide="next"
+            class="carousel-control-next"
+            type="button"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              class="active"
+              data-bs-target="#carousel-produtos"
+              data-bs-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-produtos"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-produtos"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+        </div>
+      </div>
+      <div class="container-cards">
+        <div class="row">
+          <div class="col-4">
+            <section class="card">
+              <img src="img/almofada_bob_esponja.png" />
+              <div class="card-body">
+                <h4 class="card-title">Almofada Bob Esponja</h4>
+                <p class="card-text">
+                  Almofada 100% políester personalizada com o tema Bob Esponja
+                </p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </section>
+            <section class="card">
+              <img src="img/caneca_mario.png" />
+              <div class="card-body">
+                <h4 class="card-title">Caneca Super Mário</h4>
+                <p class="card-text">
+                  Caneca em cerâmica importada AAA personalizada no tema Super
+                  Mário Broz
+                </p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </section>
+            <section class="card">
+              <img src="img/camiseta_dragon_ball.png" />
+              <div class="card-body">
+                <h4 class="card-title">Camiseta Dragon Ball</h4>
+                <p class="card-text">
+                  Camiseta 100% poliéster personalizada no tema Dragon Ball
+                </p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="lib/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -1,0 +1,15 @@
+body {
+  background-color: #000;
+}
+
+header .container {
+  background-color: #000;
+}
+
+.container {
+  background-color: #ccc;
+}
+
+.container-carousel {
+  background-color: #ccc;
+}
