@@ -6,6 +6,15 @@ header .container {
   background-color: #000;
 }
 
+.navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-nav > li:hover > a,
+.navbar-nav > li.active > a {
+  color: blueviolet;
+}
+
 .container {
   background-color: #ccc;
 }
