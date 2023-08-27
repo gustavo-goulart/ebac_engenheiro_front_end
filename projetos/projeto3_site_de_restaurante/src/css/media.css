@@ -1,0 +1,5 @@
+@media (max-width: 767px) {
+  .carousel-item img {
+    height: 280px;
+  }
+}
