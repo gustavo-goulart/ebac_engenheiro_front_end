@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="lib/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="src/lib/bootstrap.min.css" />
+    <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="src/css/style.css" />
     <title>Exercício Bootstrap</title>
   </head>
   <body>
     <header id="cabecalho">
       <div class="navbar navbar-expand-lg">
         <div class="container">
-          <img src="img/logo.png" alt="logo IDK Shop" />
+          <img src="src/img/logo.png" alt="Logo IDK Shop" />
           <button
             type="button"
             class="navbar-toggler"
@@ -41,27 +41,33 @@
       </div>
     </header>
     <main>
-      <div class="container-carousel">
+      <div class="container">
         <div
           id="carousel-produtos"
           class="carousel slide carousel-fade"
           data-bs-ride="carousel"
         >
           <div class="carousel-inner">
-            <div data-bs-interval="3000" class="carousel-item active">
-              <img class="d-block w-100" src="img/almofada_bob_esponja.png" />
+            <div data-bs-interval="2000" class="carousel-item active">
+              <img
+                class="d-block w-100"
+                src="src/img/almofada_bob_esponja.png"
+              />
               <div class="carousel-caption">
                 <h2>Almofada Bob Esponja</h2>
               </div>
             </div>
-            <div data-bs-interval="3000" class="carousel-item">
-              <img class="d-block w-100" src="img/caneca_mario.png" />
+            <div data-bs-interval="2000" class="carousel-item">
+              <img class="d-block w-100" src="src/img/caneca_mario.png" />
               <div class="carousel-caption">
                 <h2>Caneca Super Mário</h2>
               </div>
             </div>
-            <div data-bs-interval="3000" class="carousel-item">
-              <img class="d-block w-100" src="img/camiseta_dragon_ball.png" />
+            <div data-bs-interval="2000" class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="src/img/camiseta_dragon_ball.png"
+              />
               <div class="carousel-caption">
                 <h2>Camiseta Dragon Ball</h2>
               </div>
@@ -103,11 +109,11 @@
           </div>
         </div>
       </div>
-      <div class="container-cards">
+      <div class="container">
         <div class="row">
           <div class="col-4">
             <section class="card">
-              <img src="img/almofada_bob_esponja.png" />
+              <img src="src/img/almofada_bob_esponja.png" />
               <div class="card-body">
                 <h4 class="card-title">Almofada Bob Esponja</h4>
                 <p class="card-text">
@@ -116,8 +122,10 @@
                 <a href="#" class="btn btn-primary">Comprar</a>
               </div>
             </section>
+          </div>
+          <div class="col-4">
             <section class="card">
-              <img src="img/caneca_mario.png" />
+              <img src="src/img/caneca_mario.png" />
               <div class="card-body">
                 <h4 class="card-title">Caneca Super Mário</h4>
                 <p class="card-text">
@@ -127,8 +135,10 @@
                 <a href="#" class="btn btn-primary">Comprar</a>
               </div>
             </section>
+          </div>
+          <div class="col-4">
             <section class="card">
-              <img src="img/camiseta_dragon_ball.png" />
+              <img src="src/img/camiseta_dragon_ball.png" />
               <div class="card-body">
                 <h4 class="card-title">Camiseta Dragon Ball</h4>
                 <p class="card-text">
@@ -138,9 +148,9 @@
               </div>
             </section>
           </div>
-        </div>
       </div>
     </main>
-    <script src="lib/bootstrap.bundle.min.js"></script>
+
+    <script src="src/lib/bootstrap.bundle.min.js"></script>
   </body>
 </html>
