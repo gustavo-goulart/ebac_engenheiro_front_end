@@ -22,3 +22,9 @@ header .container {
 .container-carousel {
   background-color: #ccc;
 }
+
+.col-sm-12,
+.col-md-6,
+.col-lg-4 {
+  margin-bottom: 2rem;
+}
