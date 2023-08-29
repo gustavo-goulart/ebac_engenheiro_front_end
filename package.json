@@ -1,0 +1,15 @@
+{
+  "name": "ebac_engenheiro_front_end",
+  "version": "1.0.0",
+  "description": "Aprenda do zero as principais ferramentas para tecnologias, como HTML, CSS, JavaScript, Ajax e APIs e crie páginas e apps com layouts atraentes e profissionais.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.66.1"
+  }
+}
